@@ -26,6 +26,8 @@ npx skills add jerry-20160416/skills@alibaba-java-manual
 
 **详细文档：** [alibaba-java-manual/README.md](./skills/alibaba-java-manual/README.md)
 
+**在线浏览：** https://github.com/jerry-20160416/skills/tree/master/skills/alibaba-java-manual
+
 ---
 
 ## 🚀 如何使用 Skills

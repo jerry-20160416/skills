@@ -4,6 +4,10 @@
 > 来源：阿里巴巴集团技术团队
 > 更新日期：2022.02.03
 
+**📥 安装：** `npx skills add jerry-20160416/skills@alibaba-java-manual`
+
+**🌐 在线浏览：** https://github.com/jerry-20160416/skills/tree/master/skills/alibaba-java-manual
+
 ## 📖 简介
 
 本 Skill 基于阿里巴巴 Java 开发手册（黄山版）创建，是 Java 社区爱好者的集体智慧结晶和经验总结，经历了多次大规模一线实战的检验及不断完善。
