@@ -6,7 +6,7 @@
 
 | Skill | 描述 | 状态 |
 |-------|------|------|
-| [v2x-cc-design](./v2x-cc-design) | 长春车路云项目模块设计文档生成 - 按照10章节标准模板撰写详细设计文档 | ✅ 可用 |
+| [v2x-cc-design](./v2x-cc-design) | 车路云项目模块设计文档生成 - 按照10章节标准模板撰写详细设计文档 | ✅ 可用 |
 | [alibaba-java-manual](./alibaba-java-manual) | 阿里巴巴 Java 开发手册（黄山版）- 包含编程规约、异常日志、单元测试、安全规约、MySQL数据库、工程结构、设计规约七大维度 | ✅ 可用 |
 | [multi_agent_collaboration](./multi_agent_collaboration) | 多智能体协作 - 当需要其他 agent 的专长/上下文时，使用 copaw agents chat 进行双向通信 | ✅ 可用 |
 
