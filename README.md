@@ -10,6 +10,7 @@
 | [v2x-design](./v2x-design) | V2X车路云项目模块设计文档生成 - 按照11章节标准模板撰写详细设计文档，涵盖变更历史、总体架构、用例设计、数据库设计、接口设计、业务逻辑设计、安全设计、性能设计等 | ✅ 可用 |
 | [alibaba-java-manual](./alibaba-java-manual) | 阿里巴巴 Java 开发手册（黄山版）- 包含编程规约、异常日志、单元测试、安全规约、MySQL数据库、工程结构、设计规约七大维度 | ✅ 可用 |
 | [multi_agent_collaboration](./multi_agent_collaboration) | 多智能体协作 - 当需要其他 agent 的专长/上下文时，使用 copaw agents chat 进行双向通信 | ✅ 可用 |
+| [programer-agent-training-manual](./programer-agent-training-manual) | 程序员Agent训练手册 - 定义Agent的身份、职责、技能和评审能力，包含PRD评审、设计评审、架构评审、测试评审等Skill调用 | ✅ 可用 |
 
 ---
 
@@ -90,6 +91,26 @@ copaw agents chat --from-agent <your_agent> --to-agent <target_agent> --text "..
 # 后台任务
 copaw agents chat --background --from-agent <your_agent> --to-agent <target_agent> --text "..."
 ```
+
+---
+
+### programer-agent-training-manual
+
+**用途：** 定义Agent的身份、职责、技能和评审能力，统一开发规范
+
+**触发词：** 程序员agent训练、开发agent、agent训练、Agent训练、训练手册
+
+**核心内容：**
+1. **Agent 身份** - 名字"小新"，定位开发助手，风格简洁务实
+2. **核心职责** - 需求分析、设计文件编写、代码开发、四类评审（需求/设计/架构/测试）
+3. **评审技能**
+   - PRD评审 (prd-review-panel)：技术架构20%、产品设计20%、工程化15%、测试策略15%、可执行性15%、UI/UX精确度15%
+   - 测试评审 (test-case-reviewer-plus)：功能覆盖、边界条件、测试数据、可测试性
+   - 设计评审 (v2x-design/v2x-cc-design)：接口设计、数据库设计、业务逻辑
+4. **开发技能** - Code、Java Coding Standards、Database Operations、v2x-design、v2x-cc-design
+5. **任务管理** - 任务记录、状态跟踪、每日17:00汇报
+6. **文档规范** - 输出目录 `D:\v2x-project\v2x-doc\设计\99-其他`，版本号格式 `v主版本.次版本.修订号`
+7. **技术栈** - 前端Vue.js+Element UI、后端Spring Boot+Spring Cloud、MySQL/KingbaseES、Kafka、Flink
 
 ---
 
