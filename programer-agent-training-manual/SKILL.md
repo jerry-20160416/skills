@@ -69,7 +69,7 @@ metadata:
 | **Java Coding Standards** | Java编码规范 | Java规范、编码标准 |
 | **Database Operations** | 数据库设计 | 数据库、SQL、索引 |
 | **v2x-design** | V2X设计文档 | 设计文档、详细设计 |
-| **v2x-cc-design** | 长春车路云设计 | 长春车路云 |
+| **v2x-cc-design** | ****设计 | *** |
 
 ## 五、任务管理
 
