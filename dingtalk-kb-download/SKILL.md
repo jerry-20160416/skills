@@ -18,6 +18,15 @@ metadata:
 - 用户想备份钉钉文档
 - 用户提到"钉钉下载"、"知识库下载"、"dingtalk download"
 
+## 资源文件
+
+| 文件 | 说明 |
+|------|------|
+| `scripts/dingtalk-download-structured.py` | 主下载脚本 |
+| `scripts/钉钉知识库下载工具操作手册.md` | 详细使用文档 |
+
+---
+
 ## 前置条件
 
 ### 1. 环境检查
@@ -45,20 +54,24 @@ playwright install chromium
 
 ### 步骤 1：确认下载目录
 
-询问用户：
+询问用户下载目录，默认：`D:\钉钉知识库备份`
 
-```
-请确认下载目录（默认：D:\钉钉知识库备份）：
+### 步骤 2：修改输出目录（如需要）
+
+编辑脚本最后一行的 `output_dir` 参数：
+
+```python
+# scripts/dingtalk-download-structured.py 第 344 行
+downloader = DingTalkStructuredDownloader(output_dir="D:\\钉钉知识库备份")
 ```
 
-### 步骤 2：启动下载脚本
+### 步骤 3：启动下载脚本
 
 ```bash
-cd D:\14.spec-v2x\scripts
-python dingtalk-download-structured.py
+python scripts/dingtalk-download-structured.py
 ```
 
-### 步骤 3：指导用户操作
+### 步骤 4：指导用户操作
 
 脚本启动后，输出以下指引：
 
@@ -87,7 +100,7 @@ python dingtalk-download-structured.py
 ============================================================
 ```
 
-### 步骤 4：监控下载进度
+### 步骤 5：监控下载进度
 
 脚本会自动显示进度：
 
@@ -99,7 +112,7 @@ python dingtalk-download-structured.py
   ...
 ```
 
-### 步骤 5：下载完成
+### 步骤 6：下载完成
 
 显示统计信息：
 
@@ -123,17 +136,19 @@ python dingtalk-download-structured.py
 
 ### 修改输出目录
 
-编辑脚本第 287 行：
+编辑脚本第 344 行：
 
 ```python
 downloader = DingTalkStructuredDownloader(output_dir="D:\\你的目标目录")
 ```
 
-或直接运行时指定：
+### 修改下载间隔
 
-```bash
-# 临时修改输出目录（需要编辑脚本）
-```
+| 参数 | 位置 | 默认值 |
+|------|------|--------|
+| 文件下载间隔 | 第 89 行 | 0.5 秒 |
+| 子文件夹间隔 | 第 93 行 | 1 秒 |
+| 下载超时 | 第 105 行 | 60 秒 |
 
 ---
 
@@ -187,11 +202,10 @@ python dingtalk-download-structured.py
 
 ## 相关文件
 
-| 文件 | 路径 |
+| 文件 | 说明 |
 |------|------|
-| 下载脚本 | `D:\14.spec-v2x\scripts\dingtalk-download-structured.py` |
-| 操作手册 | `D:\14.spec-v2x\scripts\钉钉知识库下载工具操作手册.md` |
-| MCP Server | `D:\14.spec-v2x\dingtalk-kb-mcp\` |
+| `scripts/dingtalk-download-structured.py` | 主下载脚本 |
+| `scripts/钉钉知识库下载工具操作手册.md` | 详细使用文档 |
 
 ---
 
@@ -199,8 +213,8 @@ python dingtalk-download-structured.py
 
 | 版本 | 日期 | 变更 |
 |------|------|------|
-| v1.0.0 | 2026-07-18 | 初始版本，支持递归下载 |
+| v1.0.0 | 2026-06 | 初始版本，支持递归下载 |
 
 ---
 
-**维护者**: V2X 项目组
+**维护者**: jerry.xh
